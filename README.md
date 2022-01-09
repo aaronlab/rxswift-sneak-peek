@@ -1,4 +1,4 @@
-# RxSwift Sneak Peak
+# RxSwift Sneak Peek
 
 1. `pod install`
 
