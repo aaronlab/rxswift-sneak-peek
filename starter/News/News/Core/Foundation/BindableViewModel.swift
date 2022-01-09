@@ -1,0 +1,15 @@
+//
+//  BindableViewModel.swift
+//  News
+//
+//  Created by Aaron Lee on 2022/01/09.
+//
+
+import Foundation
+import RxSwift
+
+protocol BindableViewModel: Input, Output {
+  var apiSession: APIService { get }
+
+  var bag: DisposeBag { get }
+}

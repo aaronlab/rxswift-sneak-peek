@@ -1,0 +1,27 @@
+platform :ios, '12.0'
+inhibit_all_warnings!
+
+target 'News' do
+  use_frameworks!
+
+  # Rx
+  pod 'RxSwift', '< 6.2.0'
+  pod 'RxCocoa', '< 6.2.0'
+  pod 'RxGesture', '< 4.1.0'
+  pod 'RxDataSources', '<5.1.0'
+
+  # Others
+  pod 'Alamofire', '< 5.5.0'
+  pod 'Kingfisher', '< 6.3.0'
+  pod 'SnapKit', '< 5.1.0'
+  pod 'Then', '< 2.8.0'
+
+end
+
+post_install do |installer|
+  installer.pods_project.targets.each do |target|
+    target.build_configurations.each do |config|
+      config.build_settings['IPHONEOS_DEPLOYMENT_TARGET'] = '12.0'
+    end
+  end
+end
