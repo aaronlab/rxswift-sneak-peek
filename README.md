@@ -7,3 +7,5 @@
 3. Create `Env.swift` file in the same dir of the reference you deleted.
 
 4. Declare an application-level constant property called `APIKey: String` with `your API key` from [News API](https://newsapi.org/).
+
+For a small seminar at [DND](https://dnd.ac). ❤️
